@@ -1,0 +1,20 @@
+name: Bump version
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v3
+      - name: Publish to Registry
+        uses: elgohr/Publish-Docker-Github-Action@v5
+        with:
+          name: jrmd24/dit_docker_2024
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          tag_names: true
+          dockerfile: Docker/Dockerfile

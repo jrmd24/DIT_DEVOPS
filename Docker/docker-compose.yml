@@ -1,0 +1,6 @@
+version: '2.4'
+services:
+  streamlit_app:
+    image: "jrmd24/dit_docker_2024:latest"
+    ports:
+      - "8501:8501"
