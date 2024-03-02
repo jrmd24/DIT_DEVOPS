@@ -13,7 +13,7 @@ import dit_dc_lib as dit
 
 
 st.markdown("<h1 style='text-align: center; color:#841230;'>Groupe 4 - DATA SCRAPER APP</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color:#841230;'>Gestion dans un mode DevOps - test 26/02 - 2 </h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color:#841230;'>Gestion dans un mode DevOps - test 02/03 - 1 </h2>", unsafe_allow_html=True)
 
 st.markdown("""
 Cette application permet de collecter les données du site expat-dakar sur plusieurs pages !
