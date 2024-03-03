@@ -19,5 +19,5 @@ jobs:
         run: pip install flake8
 
       - name: Analyse du code avec Flake 8
-        run: flake8 --ignore=E722,E501,W503 --max-line-length = 120 --exclude = .git,__pycache__
+        run: flake8 --ignore=E722,E501,W503 --max-line-length=120 --exclude=.git,__pycache__
        
