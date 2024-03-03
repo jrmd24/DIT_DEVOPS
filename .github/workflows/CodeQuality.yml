@@ -1,0 +1,23 @@
+name: PEP 8 code quality standards compliance
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  pep8_check:
+    name : Vérification conformité PEP8
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Checkout du code source
+        uses: actions/checkout@v2
+
+      - name: Installation python et pip
+        run: sudo apt-get update && sudo apt-get install -y python3-pip
+
+      - name: Installation flake8
+        run: pip install flake8
+
+      - name: Analyse du code avec Flake 8
+        run: flake8 --ignore=E722,E501,W503 --max-line-length=120 --exclude=.git,__pycache__
+       
