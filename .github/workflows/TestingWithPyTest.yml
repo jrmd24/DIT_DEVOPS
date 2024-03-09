@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
       - uses: streamlit/streamlit-app-action@v0.0.3
         with:
-          app-path: test_g4_app.py
+          app-path: g4_dc_app.py
           ruff: false
           # Add pytest-args to output junit xml
           pytest-args: -v --junit-xml=test-results.xml
