@@ -33,12 +33,13 @@ page_options = (
 )
 
 st.sidebar.title("Action souhaitée")
-page = st.sidebar.selectbox("", page_options)
+page = st.sidebar.selectbox("", page_options, key="action")
 
 if page == page_options[1]:
     num_pages_to_scrap = st.sidebar.selectbox(
         "Sélectionnez le nombre de pages sur lesquelles collecter les données",
         tuple(np.arange(1, 201)),
+        key="num_pages",
     )
 
 
