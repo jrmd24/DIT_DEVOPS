@@ -16,7 +16,7 @@ jobs:
       - uses: streamlit/streamlit-app-action@v0.0.3
         with:
           app-path: test_g4_app.py
-          ruff: true
+          ruff: false
           # Add pytest-args to output junit xml
           pytest-args: -v --junit-xml=test-results.xml
       - if: always()

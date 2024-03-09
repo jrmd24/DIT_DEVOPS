@@ -66,7 +66,7 @@ def scrap_equipments(num_pages) -> pd.DataFrame:
                             current_info_text = ",".join(
                                 [x.text.strip() for x in current_info]
                             )
-                        elif not ("class" in container_type):
+                        elif "class" not in container_type:
                             current_info = soup_article.find(tag, class_=elem_class)[
                                 container_type
                             ]

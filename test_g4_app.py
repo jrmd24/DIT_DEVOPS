@@ -18,7 +18,7 @@ def test_page_1():
         at.button[i].click().run()
         assert at.button[i].label == label
         # assert at.download_button[0].label == "Download data as CSV"
-        assert not at.dataframe[0] is None
+        assert at.dataframe[0] is not None
         # assert len(at.dataframe) == 3
         # print(len(at.dataframe[0].data))
         # assert len(at.dataframe[0].data) == dataframe_sizes[i]
