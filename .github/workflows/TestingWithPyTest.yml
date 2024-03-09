@@ -17,8 +17,8 @@ jobs:
         with:
           app-path: test_g4_app.py
           ruff: true
-            # Add pytest-args to output junit xml
-            pytest-args: -v --junit-xml=test-results.xml
+          # Add pytest-args to output junit xml
+          pytest-args: -v --junit-xml=test-results.xml
       - if: always()
         uses: pmeier/pytest-results-action@v0.6.0
         with:

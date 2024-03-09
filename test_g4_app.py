@@ -1,4 +1,3 @@
-import pandas as pd
 from streamlit.testing.v1 import AppTest
 
 at = AppTest.from_file("g4_dc_app.py", default_timeout=320).run()
@@ -47,7 +46,7 @@ def test_page_2():
 
     assert len(at.dataframe) == 3
     for i, dt in enumerate(at.dataframe):
-        assert not dt is None
+        assert dt is not None
         assert len(dt.data) > 1000
 
 
