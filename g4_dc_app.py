@@ -18,6 +18,11 @@ st.markdown(
 )
 
 st.markdown(
+    "<h3 style='text-align: center; color:#841230;'>Houefa Inès Blanche BALOGOUN - test 10/03 - 1 </h3>",
+    unsafe_allow_html=True,
+)
+
+st.markdown(
     """
 Cette application permet de collecter les données du site expat-dakar sur plusieurs pages !
 * **Librairies python:** base64, pandas, streamlit, requests, bs4
