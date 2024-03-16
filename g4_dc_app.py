@@ -13,7 +13,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    "<h2 style='text-align: center; color:#841230;'>Gestion dans un mode DevOps - test 10/03 - 1 </h2>",
+    "<h2 style='text-align: center; color:#841230;'>Gestion dans un mode DevOps - 16/03/2024 </h2>",
     unsafe_allow_html=True,
 )
 
