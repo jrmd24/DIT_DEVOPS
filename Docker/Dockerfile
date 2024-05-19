@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 RUN apt-get update -y
 
-RUN apt-get install -y python3-pip
-RUN apt-get install -y pip
+RUN apt-get install -y python
+RUN apt-get install -y pip3
 RUN apt-get install -y \
     build-essential \
     curl \
@@ -20,7 +20,8 @@ WORKDIR /app
 
 COPY ../. .
 
-RUN python -m pip install --upgrade pip -r requirements.txt
+RUN pip3 install -r requirements.txt
+#RUN apt-get install python3-pandas
 
 EXPOSE 8501
 
