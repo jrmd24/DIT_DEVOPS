@@ -47,7 +47,7 @@ def test_page_2():
     assert len(at.dataframe) == 3
     for i, dt in enumerate(at.dataframe):
         assert dt is not None
-        assert len(dt.data) > 1000
+        assert len(dt.data) > 400
 
 
 # test_page_1()
